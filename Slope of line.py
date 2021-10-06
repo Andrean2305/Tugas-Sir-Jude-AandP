@@ -1,0 +1,7 @@
+a = eval(input("Enter the x-coordinate for point1: "))
+b = eval(input("Enter the y-coordinate for point1: "))
+c = eval(input("Enter the x-coordinate for point2: "))
+d = eval(input("Enter the y-coordinate for point2: "))
+z = (d-b)/(c-a)
+g = "{:.5f}".format(z)
+print(f"The slope for the line that connects two points ({a},{b}) and ({c},{d} is {g} ")
