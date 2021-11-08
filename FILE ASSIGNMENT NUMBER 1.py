@@ -15,7 +15,6 @@ def zeee(a):
     return b
 
 ze = zeee(ii)
-print(ze)
 
 baba = list(ze)
 
