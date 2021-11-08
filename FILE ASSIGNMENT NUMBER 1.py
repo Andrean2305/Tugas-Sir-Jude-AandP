@@ -19,7 +19,7 @@ def pro (a) :
     ccc = (ze[i])
     if ccc == 1 :
      print(f"This is the hapax : {i} {ccc}")
-     return (ccc)
+     return (i)
 
 ze = zeee(ii)
 baba = list(ze)
