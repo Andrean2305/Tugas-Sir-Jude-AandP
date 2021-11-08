@@ -14,11 +14,15 @@ def zeee(a):
         b[c] = b.get(c , 0)+1
     return b
 
-ze = zeee(ii)
-
-baba = list(ze)
-
-for i in baba :
+def pro (a) :
+    for i in a :
     ccc = (ze[i])
     if ccc == 1 :
-        print(f"This is the hapax : {i} {ccc}")
+     print(f"This is the hapax : {i} {ccc}")
+     return (ccc)
+
+ze = zeee(ii)
+baba = list(ze)
+
+azzzz = pro(baba)
+print(azzzz)
