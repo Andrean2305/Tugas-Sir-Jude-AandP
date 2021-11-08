@@ -18,12 +18,15 @@ ze = zeee(ii)
 baba = list(ze)
 
 def pro(a) :
+    list = []
     for i in a :
         ccc = (ze[i])
         if ccc == 1 :
          print(f"This is the hapax : {i} {ccc}")
-    return i
+         list.append(i)
+    return list
     
 
-aaa = pro(baba)
+aaa = [pro(baba)]
+print(aaa)
 #finally work sir im happy
