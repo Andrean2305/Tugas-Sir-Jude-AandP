@@ -25,7 +25,7 @@ def pro(a) :
          print(f"This is the hapax : {i} {ccc}")
          list.append(i)
     return list
-    
+     
 
 aaa = [pro(baba)]
 print(aaa)
