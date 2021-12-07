@@ -2,10 +2,10 @@ class ShopAH :
     def __init__(self,name,food):
         self.__name = name              #The 4 hidden attributes : The name of the food
         self.__foodweight = food  #The weight of the food
-        self.__price = self.__PricelistAH()   #Remember to self.method()         #The price of the food
+        self.__price = self.getPriceAH()   #Remember to self.method()         #The price of the food
         self.__total = self.TotalAH()       # Remember self.method()     #Total calculated price
 
-    def __PricelistAH(self) :   #The menu
+    def __PricelistAH(self) :   #The menu prices
         if self.__name == "Dry Cured Iberian Ham" :
             self.__price = 177.80
         elif self.__name == "Wagyu Steaks" :
@@ -24,7 +24,7 @@ class ShopAH :
             self.__price = 270.81
         else :
             self.__price = 0.00
-        return self.__price #Will return 0 if the writting of the menu name is wrong
+        #return self.__price #Will return 0 if the writting of the menu name is wrong [No returns from the function]
 
     def TotalAH(self) :
         self.__total = self.__price * self.__foodweight
@@ -37,6 +37,7 @@ class ShopAH :
         return self.__foodweight
 
     def getPriceAH(self) :
+        self.__PricelistAH()
         return self.__price
 
     def getTotalAH(self) :

@@ -30,8 +30,8 @@ def ContentAH(list_of_item) :
     for i in range(len(list_of_item)):
         print (f"Item: {list_of_item[i].getNameAH()}") # to access the get name, remember to have the obejctName.method()
         print (f"Amount ordered: {list_of_item[i].getFoodweightAH()} pounds")
-        print (f"Price per pound: ${list_of_item[i].getPriceAH()}")
-        print (f"Price of order : ${list_of_item[i].getTotalAH()}")
+        print ("Price per pound: ${:.2f}".format(list_of_item[i].getPriceAH()))
+        print ("Price of order : ${:.2f}".format(list_of_item[i].getTotalAH()))
         print("")
 
 def CalculateAH(list_of_item) : #Fuction to total the cost of all the orders
@@ -40,11 +40,10 @@ def CalculateAH(list_of_item) : #Fuction to total the cost of all the orders
         cost_item = cost_item + list_of_item[i].getTotalAH()
     return cost_item
 
-
 def mainAH():         #Call of the fuction
     aa = listAH()
     ContentAH(aa)
     cc = CalculateAH(aa)
-    print(f"Total cost: {cc}")
+    print(f"Total cost: ${cc}")
 
 mainAH() #Call the main function which call 3 other functions
